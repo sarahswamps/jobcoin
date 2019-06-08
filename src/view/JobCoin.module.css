@@ -9,7 +9,9 @@
     text-align: center;
 }
 .login {
-    padding: 20px 40px;
+    padding: 10%;
+    width: 400px;
+    margin: auto;
 }
 .box {
     border: 1px solid gray;
@@ -25,6 +27,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .button {
     border: 1px solid gray;
@@ -33,7 +36,7 @@
     width: 250px;
     border-radius: 4px;
     color: slategray;
-    padding: 5px;
+    padding: 10px 5px;
     text-align: center;
     cursor: pointer;
 }
@@ -83,5 +86,5 @@ span.link {
     border: 1px solid darkgray;
     border-radius: 4px;
     padding: 10px;
-    width: 150px;
+    width: 300px;
 }

@@ -1,5 +1,6 @@
 import { createSelector } from 'reselect';
-const dateOptions = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+const longDateOptions = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+const shortDateOptions = { year: 'numeric', month: 'numeric', day: 'numeric' };
 
 export const jobCoinSelector = state => state.jobcoin;
 export const isSignedInSelector = createSelector(
@@ -19,7 +20,8 @@ export const transactionsAsBarChartDataSelector = createSelector(
         const data = [];
         transactions.forEach(transaction => {
             data.push({
-                date: (new Date(transaction.timestamp)).toLocaleDateString('en-US', dateOptions),
+                date: (new Date(transaction.timestamp)).toLocaleDateString('en-US', longDateOptions),
+                shortDate: (new Date(transaction.timestamp)).toLocaleDateString('en-US', shortDateOptions),
                 amount: transaction.amount,
                 to: transaction.toAddress,
                 from: transaction.fromAddress,

@@ -49,6 +49,8 @@ class _SendJobCoin extends PureComponent {
     handleSend = () => {
         if (this.isValid()) {
             this.props.sendJobCoin(this.props.address, this.state.toAddress, parseFloat(this.state.amountToSend));
+            this.setState({ toAddress: '', amountToSend: '' });
+            alert('Job Coins Sent!')
         }
     }
     render() {
