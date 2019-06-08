@@ -1,0 +1,87 @@
+.wrapper {
+    color: darkgray;
+    font-size: 20px;
+    padding: 20px;
+}
+.logo {
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+.login {
+    padding: 20px 40px;
+}
+.box {
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.boxTitle {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+.boxBody {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    border: 1px solid gray;
+    background-color: darkgray;
+    margin: 10px 0;
+    width: 250px;
+    border-radius: 4px;
+    color: slategray;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+input, label {
+    display:block;
+}
+input[type=text] {
+    border: 1px solid darkgray;
+    width: 250px;
+    height: 25px;
+    color: darkgray;
+    font-size:25px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+/* Dashboard styles */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+span.link {
+    margin-left: 10px;
+    cursor: pointer;
+    color: blue;
+}
+.dashboard {
+    display: flex;
+    flex-direction: row;
+}
+.leftSide {
+    width: 300px;
+}
+.rightSide {
+    padding-left: 20px;
+    width: 100%;
+}
+
+/* history */
+.history {
+    width: 100%;
+}
+.tooltip {
+    background-color: white;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+    width: 150px;
+}
