@@ -6,10 +6,13 @@ import { isSignedInSelector } from '../../model/JobCoinSelector';
 import Dashboard from './Dashboard';
 import Login from './Login';
 
-class _Login extends PureComponent {
+export class JobCoin extends PureComponent {
     static propTypes = {
         isSignedIn: PropTypes.bool,
     };
+    static defaultProps = {
+        isSignedIn: false,
+    }
     render() {
         return this.props.isSignedIn ? <Dashboard /> : <Login />
     }
@@ -21,4 +24,4 @@ const mapSelectors = createStructuredSelector({
 const mapActionCreators = {
 };
 
-export default connect(mapSelectors, mapActionCreators) (_Login);
+export default connect(mapSelectors, mapActionCreators) (JobCoin);

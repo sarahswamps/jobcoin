@@ -5,7 +5,7 @@ import {createStructuredSelector} from "reselect";
 import { balanceSelector, addressSelector } from '../../model/JobCoinSelector';
 import styles from '../JobCoin.module.css'
 
-class _SendJobCoin extends PureComponent {
+export class SendJobCoin extends PureComponent {
     static propTypes = {
         balance: PropTypes.string,
         sendJobCoin: PropTypes.func,
@@ -77,7 +77,6 @@ const mapSelectors = createStructuredSelector({
     balance: balanceSelector,
     address: addressSelector,
 });
-// fromAddress=Sarah&toAddress=Bob&amount=25
 
 const mapActionCreators = {
     sendJobCoin: (fromAddress, toAddress, amount) => ({
@@ -88,4 +87,4 @@ const mapActionCreators = {
     })
 };
 
-export default connect(mapSelectors, mapActionCreators) (_SendJobCoin);
+export default connect(mapSelectors, mapActionCreators) (SendJobCoin);

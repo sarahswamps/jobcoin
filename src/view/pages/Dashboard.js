@@ -8,14 +8,14 @@ import SendJobCoin from '../components/SendJobCoin';
 import styles from '../JobCoin.module.css'
 import { addressSelector } from '../../model/JobCoinSelector';
 
-class _Dashboard extends PureComponent {
+export class Dashboard extends PureComponent {
     static propTypes = {
         signOff: PropTypes.func,
         address: PropTypes.string,
     };
     static defaultProps = {
         address: '',
-    }
+    };
     
     signOff = () => this.props.signOff();
     render() {
@@ -52,4 +52,4 @@ const mapActionCreators = {
     })
 };
 
-export default connect(mapSelectors, mapActionCreators) (_Dashboard);
+export default connect(mapSelectors, mapActionCreators) (Dashboard);

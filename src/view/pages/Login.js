@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import {createStructuredSelector} from "reselect";
 import styles from '../JobCoin.module.css'
 
-class _Login extends PureComponent {
+export class Login extends PureComponent {
     static propTypes = {
         signInWithAddress: PropTypes.func,
     };
@@ -13,7 +13,9 @@ class _Login extends PureComponent {
         address: '',
     }
     componentDidMount(){
-        this.nameInput.focus();
+        if (this.nameInput) {
+            this.nameInput.focus();
+        }
       }
     handleSignIn = () => {
         this.props.signInWithAddress(this.state.address);
@@ -56,4 +58,4 @@ const mapActionCreators = {
     })
 };
 
-export default connect(mapSelectors, mapActionCreators) (_Login);
+export default connect(mapSelectors, mapActionCreators) (Login);
