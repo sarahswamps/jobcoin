@@ -27,7 +27,6 @@ export const injectReducer = (store, { key, reducer }) => {
 export const initReducers = store => {
     // inject reducers to store
     injectReducer(store, { key: "jobcoin", reducer: require('./model/JobCoinReducer').default });
-    // injectReducer(store, { key: 'user', reducer: require('./auth/reducer').default });
 };
 
 export default makeRootReducer;
