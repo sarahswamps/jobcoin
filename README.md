@@ -1,3 +1,21 @@
+JobCoin Example Project.
+
+The following instructions assumes you have node/npm installed.  Clone this project.
+### `git clone https://github.com/sarahswamps/jobcoin.git`
+
+NPM install
+### `npm install`
+
+Run locally
+### `npm test`
+
+There are some unit tests created.
+### `npm test`
+
+Some users that have JobCoins are 'Sarah', 'John', 'Bob' and 'Alice'
+
+------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
