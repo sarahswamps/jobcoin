@@ -9,7 +9,7 @@ NPM install
 Run locally
 ### `npm test`
 
-There are some unit tests created.
+There are some unit tests created.  I could not get to all of them.
 ### `npm test`
 
 Some users that have JobCoins are 'Sarah', 'John', 'Bob' and 'Alice'
