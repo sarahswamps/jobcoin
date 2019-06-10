@@ -4,7 +4,7 @@ const initialState = Map({
     isSignedIn: false,
     address: '',
     transactions: [],
-    balance: 0,
+    balance: '0',
 });
 
 const ACTION_HANDLERS = {
@@ -14,7 +14,7 @@ const ACTION_HANDLERS = {
         .set('isSignedIn', true),
     'SIGN_OFF': (state) => state.set('address', '')
         .set('transactions', [])
-        .set('balance', 0)
+        .set('balance', '0')
         .set('isSignedIn', false),
 };
 

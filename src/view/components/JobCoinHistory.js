@@ -17,7 +17,7 @@ function CustomTooltip({ payload, label, active }) {
             </div>
         ) : (
             <div className={styles.tooltip}>
-                {data.to} was paid ${data.amount} on {data.date} by {data.from}
+                {data.to} was paid ${data.amount} on {data.date} from {data.from}
             </div>
         );
     }
